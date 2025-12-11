@@ -1,0 +1,1 @@
+# STNPlayerSDK-iOS-XCFramework
