@@ -1,0 +1,256 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name STNPlayerSDK
+import AVFoundation
+import AVKit
+import DeveloperToolsSupport
+import Foundation
+import GoogleInteractiveMediaAds
+import PrebidMobile
+@_exported import STNPlayerSDK
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct PublisherConfigResponse : Swift.Codable {
+  public let data: STNPlayerSDK.PublisherData?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PublisherData : Swift.Codable {
+  public let mmCC: Swift.String?
+  public let mmRC: Swift.String?
+  public let mmCTC: Swift.String?
+  public let comment: Swift.String?
+  public let ruleID: Swift.String?
+  public let orgID: Swift.String?
+  public let slugID: Swift.String?
+  public let shutdown: Swift.Bool?
+  public let config: STNPlayerSDK.PublisherData.OrgConfig?
+  public struct OrgConfig : Swift.Codable {
+    public let playerName: Swift.String?
+    public let monetization: STNPlayerSDK.PublisherData.OrgConfig.Monetization?
+    public struct Monetization : Swift.Codable {
+      public let internalGamTag: Swift.String?
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension STNPlayerSDK.PublisherData {
+  public static var `default`: STNPlayerSDK.PublisherData {
+    get
+  }
+}
+public enum StickyPosition {
+  case sticy_top
+  case sticky_bottom
+  case anchor_right
+  case anchor_left
+  case none
+  public static func == (a: STNPlayerSDK.StickyPosition, b: STNPlayerSDK.StickyPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct STNPlayerRepresentable : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(config: STNPlayerSDK.STNPlayerConfig, orgId: Swift.String, delegate: (any STNPlayerSDK.STNPlayerDelegate)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12STNPlayerSDK0A13RepresentableV4bodyQrvp", 0) __
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class STNPlayer : UIKit.UIView, UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any STNPlayerSDK.STNPlayerDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(config: STNPlayerSDK.STNPlayerConfig, orgId: Swift.String)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency public func pin(to container: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency public func observeScroll(of scrollView: UIKit.UIScrollView, in view: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency public func stopObserving()
+  @_Concurrency.MainActor @preconcurrency @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+}
+public let SDK_VERSION: Swift.String
+public struct STNPlayerConfig : Swift.Decodable {
+  public let publisherId: Swift.String
+  public let articleId: Swift.String?
+  public let playerData: STNPlayerSDK.STNPlayerConfig.PlayerData
+  public struct PlayerData : Swift.Decodable {
+    public let playerId: Swift.String
+    public let playlistItem: STNPlayerSDK.STNPlayerConfig.PlaylistItem
+    public let playerTypeConfig: STNPlayerSDK.STNPlayerConfig.PlayerTypeConfig
+    public let uiConfig: STNPlayerSDK.STNPlayerConfig.UIConfig?
+    public let minimizedConfig: STNPlayerSDK.STNPlayerConfig.MinimizedConfig?
+    public let playbackConfig: STNPlayerSDK.STNPlayerConfig.PlaybackConfig
+    public let monetizationConfig: STNPlayerSDK.STNPlayerConfig.MonetizationConfig?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct PlaylistItem : Swift.Decodable {
+    public let playlistId: Swift.String
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct PlayerTypeConfig : Swift.Decodable {
+    public let type: Swift.String
+    public let sticky: Swift.String?
+    public let stickyPlayerType: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct UIConfig : Swift.Decodable {
+    public let showMinimizeTransition: Swift.Bool
+    public let fullscreenConfig: STNPlayerSDK.STNPlayerConfig.FullscreenConfig
+    public let titleBar: STNPlayerSDK.STNPlayerConfig.TitleBar
+    public let controlBar: STNPlayerSDK.STNPlayerConfig.ControlBar
+    public let minimizedBackgroundColor: Swift.String?
+    public let minimizedFontColor: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct FullscreenConfig : Swift.Decodable {
+    public let onRotate: Swift.Bool
+    public let buttonEnabled: Swift.Bool
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct TitleBar : Swift.Decodable {
+    public let backgroundColor: Swift.String
+    public let backgroundOpacity: Swift.Double
+    public let fontColor: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct ControlBar : Swift.Decodable {
+    public let backgroundColor: Swift.String
+    public let backgroundOpacity: Swift.Double
+    public let fontColor: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct MinimizedConfig : Swift.Decodable {
+    public let allowClose: Swift.Bool
+    public let allowRestore: Swift.Bool
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct PlaybackConfig : Swift.Decodable {
+    public let autoplay: Swift.Bool
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct MonetizationConfig : Swift.Decodable {
+    public let adTagUrl: Swift.String
+    public let gam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Gam
+    public let custParams: Swift.String?
+    public let preRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.AdRoll?
+    public let midRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.AdRoll?
+    public struct AdRoll : Swift.Decodable {
+      public let enabled: Swift.Bool
+      public let frequency: Swift.String
+      public let nth: Swift.Int?
+      public let breakpoints: [Swift.Int]?
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct Gam : Swift.Decodable {
+      public let customParams: [Swift.String : Swift.String]?
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class LoadingIndicator : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency final public func show()
+  @_Concurrency.MainActor @preconcurrency final public func hide()
+  @objc deinit
+}
+@objc public enum STNPlayerEvent : Swift.Int, Swift.CaseIterable {
+  case playerBecameSticky
+  case playerBecameNormal
+  case videoStarted
+  case videoFinished
+  case videoPaused
+  case videoResumed
+  case adLoaded
+  case adStartedPlaying
+  case adFinished
+  case adClicked
+  case adTapped
+  case adSkipped
+  case adPaused
+  case adResumed
+  case adReacedFirstQuartile
+  case adReacedMidpoint
+  case adReacedThirdQuartile
+  case adCompleted
+  case allAdsCompleted
+  case externalBrowserWillOpen
+  case externalBrowserDidOpen
+  case externalBrowserWillClose
+  case externalBrowserDidClose
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [STNPlayerSDK.STNPlayerEvent]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [STNPlayerSDK.STNPlayerEvent] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum STNPlayerError : Swift.Int, Swift.CaseIterable {
+  case videoLoadFailed
+  case videoPlaybackFailed
+  case networkError
+  case adLoadFailed
+  case adPlaybackFailed
+  case configurationError
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [STNPlayerSDK.STNPlayerError]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [STNPlayerSDK.STNPlayerError] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol STNPlayerDelegate {
+  @objc optional func didReceiveEvent(event: STNPlayerSDK.STNPlayerEvent, data: [Swift.String : Any]?)
+  @objc optional func didReceiveError(error: STNPlayerSDK.STNPlayerError, data: [Swift.String : Any]?)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CustomVideoPlayerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any STNPlayerSDK.STNPlayerDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var shouldBeSticky: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var minimizedPosition: STNPlayerSDK.StickyPosition
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public init(config: STNPlayerSDK.STNPlayerConfig, orgId: Swift.String)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency public func setVideoTitle(_ title: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency public func loadPlaylist(playlistID: Swift.String)
+}
+extension STNPlayerSDK.StickyPosition : Swift.Equatable {}
+extension STNPlayerSDK.StickyPosition : Swift.Hashable {}
+extension STNPlayerSDK.STNPlayerRepresentable : Swift.Sendable {}
+extension STNPlayerSDK.STNPlayerEvent : Swift.Equatable {}
+extension STNPlayerSDK.STNPlayerEvent : Swift.Hashable {}
+extension STNPlayerSDK.STNPlayerEvent : Swift.RawRepresentable {}
+extension STNPlayerSDK.STNPlayerError : Swift.Equatable {}
+extension STNPlayerSDK.STNPlayerError : Swift.Hashable {}
+extension STNPlayerSDK.STNPlayerError : Swift.RawRepresentable {}

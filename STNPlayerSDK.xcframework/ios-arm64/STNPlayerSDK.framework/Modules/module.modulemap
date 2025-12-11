@@ -1,0 +1,6 @@
+framework module STNPlayerSDK {
+  umbrella header "STNPlayerSDK.h"
+  export *
+
+  module * { export * }
+}
