@@ -8751,7 +8751,7 @@
       "kind": "StringLiteral",
       "offset": 107,
       "length": 7,
-      "value": "\"1.0.0\""
+      "value": "\"1.0.1\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/MinuteMediaSDK\/STNPlayerSDK\/Sources\/Components\/LoadingIndicator.swift",
