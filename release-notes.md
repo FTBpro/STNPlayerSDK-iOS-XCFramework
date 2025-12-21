@@ -2,11 +2,13 @@
 
 ## v1.0.2 - December 21, 2025
 
+- Update PlayerConfig and Ad Tag URL - moving from `articleId` to `descriptionUrl`
 - Added `didReceiveShutdownEvent` to `STNPlayerDelegate` + example in the sample app
 - Provide "player name" and "player id" to the report events
 - Fix - make "midroll" ads available
 - Fix - infinity loading animation if ads is not playing and continue playing when closing the screen with ads playing
 - Fix - missing some query params (play_code, version)
+- Eliminate `stickyPlayerType` from STNPlayerConfig
 
 ## v1.0.1 - December 16, 2025
 
