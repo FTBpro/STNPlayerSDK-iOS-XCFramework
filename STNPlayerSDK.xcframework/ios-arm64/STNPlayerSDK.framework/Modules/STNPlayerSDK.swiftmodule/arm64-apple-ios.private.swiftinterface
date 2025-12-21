@@ -28,12 +28,18 @@ public struct PublisherData : Swift.Codable {
   public let orgID: Swift.String?
   public let slugID: Swift.String?
   public let shutdown: Swift.Bool?
-  public let config: STNPlayerSDK.PublisherData.OrgConfig?
-  public struct OrgConfig : Swift.Codable {
-    public let playerName: Swift.String?
-    public let monetization: STNPlayerSDK.PublisherData.OrgConfig.Monetization?
-    public struct Monetization : Swift.Codable {
-      public let internalGamTag: Swift.String?
+  public let player: STNPlayerSDK.PublisherData.PlayerResponse?
+  public struct PlayerResponse : Swift.Codable {
+    public let id: Swift.String?
+    public let name: Swift.String?
+    public let config: STNPlayerSDK.PublisherData.PlayerResponse.OrgConfig?
+    public struct OrgConfig : Swift.Codable {
+      public let monetization: STNPlayerSDK.PublisherData.PlayerResponse.OrgConfig.MonetizationResponse?
+      public struct MonetizationResponse : Swift.Codable {
+        public let ad_tag: Swift.String?
+        public func encode(to encoder: any Swift.Encoder) throws
+        public init(from decoder: any Swift.Decoder) throws
+      }
       public func encode(to encoder: any Swift.Encoder) throws
       public init(from decoder: any Swift.Decoder) throws
     }
@@ -49,7 +55,7 @@ extension STNPlayerSDK.PublisherData {
   }
 }
 public enum StickyPosition {
-  case sticy_top
+  case sticky_top
   case sticky_bottom
   case anchor_right
   case anchor_left
@@ -82,7 +88,7 @@ public enum StickyPosition {
 public let SDK_VERSION: Swift.String
 public struct STNPlayerConfig : Swift.Decodable {
   public let publisherId: Swift.String
-  public let articleId: Swift.String?
+  public let descriptionUrl: Swift.String?
   public let playerData: STNPlayerSDK.STNPlayerConfig.PlayerData
   public struct PlayerData : Swift.Decodable {
     public let playerId: Swift.String
@@ -101,7 +107,6 @@ public struct STNPlayerConfig : Swift.Decodable {
   public struct PlayerTypeConfig : Swift.Decodable {
     public let type: Swift.String
     public let sticky: Swift.String?
-    public let stickyPlayerType: Swift.String?
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct UIConfig : Swift.Decodable {
@@ -226,6 +231,7 @@ public struct STNPlayerConfig : Swift.Decodable {
 @objc public protocol STNPlayerDelegate {
   @objc optional func didReceiveEvent(event: STNPlayerSDK.STNPlayerEvent, data: [Swift.String : Any]?)
   @objc optional func didReceiveError(error: STNPlayerSDK.STNPlayerError, data: [Swift.String : Any]?)
+  @objc func didReceiveShutdownEvent()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CustomVideoPlayerView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any STNPlayerSDK.STNPlayerDelegate)? {
