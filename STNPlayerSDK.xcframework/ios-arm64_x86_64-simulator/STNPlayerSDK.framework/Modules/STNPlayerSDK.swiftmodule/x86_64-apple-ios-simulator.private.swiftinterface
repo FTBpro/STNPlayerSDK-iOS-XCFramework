@@ -105,7 +105,6 @@ public struct STNPlayerConfig : Swift.Decodable {
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct PlayerTypeConfig : Swift.Decodable {
-    public let type: Swift.String
     public let sticky: Swift.String?
     public init(from decoder: any Swift.Decoder) throws
   }
