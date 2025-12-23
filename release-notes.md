@@ -1,5 +1,12 @@
 # Release Notes
 
+## v1.0.3 - December 23, 2025
+
+- Fix - Added a possible fix to show midroll/preroll ads
+- Fix - Hide player content if we are waiting for server response
+- Internal - Remove type from config
+
+
 ## v1.0.2 - December 21, 2025
 
 - Update PlayerConfig and Ad Tag URL - moving from `articleId` to `descriptionUrl`
