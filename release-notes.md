@@ -1,6 +1,6 @@
 # Release Notes
 
-## v1.0.3 - December 31, 2025
+## v1.0.4 - December 31, 2025
 
 - Update SDK to use IMA SDK version 3.28.10 (latest)
 - Update ad tag builder logic to match android
