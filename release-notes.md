@@ -18,7 +18,6 @@
 - Fixed UI Thread Safety Issues
 - remove every `nth` logic from code - not needed anymore
 - fix ad pause on player minimize
-- 
 
 ## v1.0.3 - December 23, 2025
 
