@@ -97,6 +97,7 @@ public struct STNPlayerConfig : Swift.Decodable {
     public let uiConfig: STNPlayerSDK.STNPlayerConfig.UIConfig?
     public let minimizedConfig: STNPlayerSDK.STNPlayerConfig.MinimizedConfig?
     public let playbackConfig: STNPlayerSDK.STNPlayerConfig.PlaybackConfig
+    public let skipContentAfter: Swift.Int?
     public let monetizationConfig: STNPlayerSDK.STNPlayerConfig.MonetizationConfig?
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -146,13 +147,13 @@ public struct STNPlayerConfig : Swift.Decodable {
   public struct MonetizationConfig : Swift.Decodable {
     public let adTagUrl: Swift.String
     public let gam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Gam
+    public let floorPrice: Swift.String?
     public let custParams: Swift.String?
     public let preRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.AdRoll?
     public let midRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.AdRoll?
     public struct AdRoll : Swift.Decodable {
       public let enabled: Swift.Bool
       public let frequency: Swift.String
-      public let nth: Swift.Int?
       public let breakpoints: [Swift.Int]?
       public init(from decoder: any Swift.Decoder) throws
     }
