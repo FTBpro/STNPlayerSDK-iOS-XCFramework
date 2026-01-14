@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name STNPlayerSDK
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name STNPlayerSDK
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import AVFoundation
 import AVKit
 import DeveloperToolsSupport
@@ -37,6 +38,7 @@ public struct PublisherData : Swift.Codable {
       public let monetization: STNPlayerSDK.PublisherData.PlayerResponse.OrgConfig.MonetizationResponse?
       public struct MonetizationResponse : Swift.Codable {
         public let ad_tag: Swift.String?
+        public let demand_owner: Swift.String?
         public func encode(to encoder: any Swift.Encoder) throws
         public init(from decoder: any Swift.Decoder) throws
       }
@@ -142,6 +144,7 @@ public struct STNPlayerConfig : Swift.Decodable {
   }
   public struct PlaybackConfig : Swift.Decodable {
     public let autoplay: Swift.Bool
+    public let soundsOn: Swift.Bool
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct MonetizationConfig : Swift.Decodable {
@@ -149,12 +152,18 @@ public struct STNPlayerConfig : Swift.Decodable {
     public let gam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Gam
     public let floorPrice: Swift.String?
     public let custParams: Swift.String?
-    public let preRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.AdRoll?
-    public let midRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.AdRoll?
-    public struct AdRoll : Swift.Decodable {
+    public let preRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.PreRoll?
+    public let midRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.MidRoll?
+    public struct PreRoll : Swift.Decodable {
       public let enabled: Swift.Bool
       public let frequency: Swift.String
-      public let breakpoints: [Swift.Int]?
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct MidRoll : Swift.Decodable {
+      public let enabled: Swift.Bool
+      public let recurrence: Swift.Int?
+      public let breakpoints: [Swift.Int]
+      public let numberOfSlots: Swift.Int?
       public init(from decoder: any Swift.Decoder) throws
     }
     public struct Gam : Swift.Decodable {

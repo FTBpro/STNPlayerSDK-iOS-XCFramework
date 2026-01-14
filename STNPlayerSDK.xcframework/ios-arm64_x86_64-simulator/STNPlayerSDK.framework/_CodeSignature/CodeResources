@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		1y/mc04+j9BiPfd9Uiy59RHfuLQ=
+		g32PyBmAWE7SmVKLv/ZsRKGMHBI=
 		</data>
 		<key>Headers/STNPlayerSDK.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Y9PGyhEaXhm8S/1AqXftksVzW1k=
+		VDPlDCfJVIKrBtgDPj1y+QmYiDg=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		2suwTDUqdqil8+PeGgVWNsUKY5Q=
+		4Yz71OzeTNeYT0RlWA4LYz1f/uc=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		zYCFFcH87INwv8dS64L3Bg2qmzM=
+		UhrhgiwMUPn57TAv3cGnpUKIwWI=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		P5Qv+L6WnDA5nBSy8LSpLfZBITU=
+		36Jj5SDuX8Tgj2cea9yAS0Z282g=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zYCFFcH87INwv8dS64L3Bg2qmzM=
+		UhrhgiwMUPn57TAv3cGnpUKIwWI=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Uvp6pqkEf+71B/pVq7PYkSnkz/k=
+		2EIfyNBEj4QymDNov2rQCc+h5CU=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		2suwTDUqdqil8+PeGgVWNsUKY5Q=
+		4Yz71OzeTNeYT0RlWA4LYz1f/uc=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DtN/0KjYfy8gpqk38WvhD3VesFY=
+		/vGvwIRA9UMP8x0eqfCvBfd9cu0=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3ee9H3ROEa1a9F5MfnS9nrjqsgQ=
+		gS7jWHx5kfY7IY5C3pj6fAmkLMI=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DtN/0KjYfy8gpqk38WvhD3VesFY=
+		/vGvwIRA9UMP8x0eqfCvBfd9cu0=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aNvb7CdvYkgxJWkk2u7GqF10ZGY=
+		7xr5WlNQkIhkSbelE6otu8FKzlU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UohM4Wnhyl/Tp9fm+jFCA4G17xju2pDQSEM58HkAMyk=
+			pvcq74oP6GvPycXZNHNd+4MUnz5+rGhpcapfehAnSAc=
 			</data>
 		</dict>
 		<key>Headers/STNPlayerSDK.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SBtzjXwoOpoyJibxPzJO6hM1iE/phnvum3whceBmJxI=
+			rJVsS54V4SjN+OQ2RZdSz/4Zw0SGWN/spzhEWSVTTiQ=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WgWyVchp1sV6/+nTGfXTRR4/H38RQXGFu8Wlc6M1TP4=
+			aHGNSPJPGJoy6o6ZN9xx7m6sGqkxJQM8dzT8oa3KcM0=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0/pPnk7QQtfha7jvhyE2oWY1O+kyofzncUKYnb8RPDc=
+			abq1DtXogQViMC3vfvP3yp0bs0gv/SgDIiMv6j54B1w=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WgWyVchp1sV6/+nTGfXTRR4/H38RQXGFu8Wlc6M1TP4=
+			aHGNSPJPGJoy6o6ZN9xx7m6sGqkxJQM8dzT8oa3KcM0=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T4vw8GYzV9hT8BXLqXi7uVIHe1k8SJLQX792lq1dj/s=
+			8yYu6tzjef5kzYqKIbAkmxHKqWEe4bk/GnsyAvKadz4=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SBtzjXwoOpoyJibxPzJO6hM1iE/phnvum3whceBmJxI=
+			rJVsS54V4SjN+OQ2RZdSz/4Zw0SGWN/spzhEWSVTTiQ=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0VeQQaBeY3SuyJR5MBcjgvjcU3zX/35T8Yz6QHA6ITE=
+			jqVqJSAJcU/wNCWxFGEer2XQKlC6w3gkiaD51uW4vlI=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dgFfOeht15SCpQ2wESFnVLEfNVlvOzcigs9FgurYj9g=
+			37NZZ6+5I8PeihpwyVtjvVSBfyZSkS5qH61GV+uIehg=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0VeQQaBeY3SuyJR5MBcjgvjcU3zX/35T8Yz6QHA6ITE=
+			jqVqJSAJcU/wNCWxFGEer2XQKlC6w3gkiaD51uW4vlI=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g5V1FS1f6jK6vf7DTpnbO6PIwx9QltXbvEuK+u4+Mfs=
+			4Bi/GrDvR28cJ0pLO4N7qninHzhvsM/2CoOkOB+WIv8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
