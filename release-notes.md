@@ -1,5 +1,16 @@
 # Release Notes
 
+## v1.0.5 - January 14, 2026
+
+- fix order between `playerInjected` and `playerEmbedReportsApi` events.
+- Added a fix to continue playing ads when return from other screen
+- Disable stay/next buttons if user interact with player
+- Implement poster image
+- Provide demand owner from the server response
+- Disable midroll in the player config
+- Implemnt sounds off if auto play is on
+- Add an additional property for auto play
+
 ## v1.0.4 - December 31, 2025
 
 - Update SDK to use IMA SDK version 3.28.10 (latest)
