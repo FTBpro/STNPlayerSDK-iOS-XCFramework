@@ -51,11 +51,6 @@ public struct PublisherData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension STNPlayerSDK.PublisherData {
-  public static var `default`: STNPlayerSDK.PublisherData {
-    get
-  }
-}
 public enum StickyPosition {
   case sticky_top
   case sticky_bottom
@@ -157,6 +152,7 @@ public struct STNPlayerConfig : Swift.Decodable {
     public struct PreRoll : Swift.Decodable {
       public let enabled: Swift.Bool
       public let frequency: Swift.String
+      public let numberOfSlots: Swift.Int?
       public init(from decoder: any Swift.Decoder) throws
     }
     public struct MidRoll : Swift.Decodable {
