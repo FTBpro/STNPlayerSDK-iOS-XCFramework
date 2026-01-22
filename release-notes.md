@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.0.6 - January 22, 2026
+
+- Fix slots for pre-roll and mid-roll video ads.
+- Provide another target for request/response events
+- Remove default publisher response if something is wrong
+
 ## v1.0.5 - January 14, 2026
 
 - fix order between `playerInjected` and `playerEmbedReportsApi` events.
