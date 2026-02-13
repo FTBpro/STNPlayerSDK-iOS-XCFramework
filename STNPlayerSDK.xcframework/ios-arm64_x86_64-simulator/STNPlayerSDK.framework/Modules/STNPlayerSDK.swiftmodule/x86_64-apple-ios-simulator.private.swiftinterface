@@ -29,25 +29,112 @@ public struct PublisherData : Swift.Codable {
   public let orgID: Swift.String?
   public let slugID: Swift.String?
   public let shutdown: Swift.Bool?
-  public let player: STNPlayerSDK.PublisherData.PlayerResponse?
-  public struct PlayerResponse : Swift.Codable {
-    public let id: Swift.String?
-    public let name: Swift.String?
-    public let config: STNPlayerSDK.PublisherData.PlayerResponse.OrgConfig?
-    public struct OrgConfig : Swift.Codable {
-      public let monetization: STNPlayerSDK.PublisherData.PlayerResponse.OrgConfig.MonetizationResponse?
-      public struct MonetizationResponse : Swift.Codable {
-        public let ad_tag: Swift.String?
-        public let demand_owner: Swift.String?
-        public func encode(to encoder: any Swift.Encoder) throws
-        public init(from decoder: any Swift.Decoder) throws
-      }
-      public func encode(to encoder: any Swift.Encoder) throws
-      public init(from decoder: any Swift.Decoder) throws
-    }
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
+  public let player: STNPlayerSDK.PlayerConfig?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PlayerConfig : Swift.Codable {
+  public let name: Swift.String?
+  public let id: Swift.String?
+  public let config: STNPlayerSDK.GlobalConfig?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GlobalConfig : Swift.Codable {
+  public let content: STNPlayerSDK.ContentConfig?
+  public let uiConfig: STNPlayerSDK.UIConfig?
+  public let monetizationConfig: STNPlayerSDK.MonetizationConfig?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ContentConfig : Swift.Codable {
+  public let playlistId: Swift.String?
+  public let playbackConfig: Swift.String?
+  public let soundsOn: Swift.Bool?
+  public let skipContentAfter: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UIConfig : Swift.Codable {
+  public let sticky: Swift.String?
+  public let showMinimizeTransition: Swift.Bool?
+  public let closeMinimizedConfig: STNPlayerSDK.CloseMinimizedConfig?
+  public let fullscreenConfig: STNPlayerSDK.FullscreenConfig?
+  public let titleBar: STNPlayerSDK.BarStyleConfig?
+  public let controlBar: STNPlayerSDK.BarStyleConfig?
+  public let minimizedBackgroundColor: Swift.String?
+  public let minimizedFontColor: Swift.String?
+  public let primaryColor: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CloseMinimizedConfig : Swift.Codable {
+  public let allowClose: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FullscreenConfig : Swift.Codable {
+  public let onRotate: Swift.Bool?
+  public let buttonEnabled: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BarStyleConfig : Swift.Codable {
+  public let backgroundColor: Swift.String?
+  public let backgroundOpacity: Swift.Double?
+  public let fontColor: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MonetizationConfig : Swift.Codable {
+  public let floorPrice: Swift.Double?
+  public let revshare: Swift.Double?
+  public let gam: STNPlayerSDK.GAMConfig?
+  public let prebid: STNPlayerSDK.PrebidConfig?
+  public let preRoll: STNPlayerSDK.PreRollConfig?
+  public let midRoll: STNPlayerSDK.MidRollConfig?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GAMConfig : Swift.Codable {
+  public let externalGam: STNPlayerSDK.ExternalGAM?
+  public let internalGam: STNPlayerSDK.InternalGAM?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ExternalGAM : Swift.Codable {
+  public let enabled: Swift.Bool?
+  public let externalGamUrl: Swift.String?
+  public let demandOwner: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InternalGAM : Swift.Codable {
+  public let enabled: Swift.Bool?
+  public let adTagUrl: Swift.String?
+  public let demandOwner: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PrebidConfig : Swift.Codable {
+  public let enabled: Swift.Bool?
+  public let accountId: Swift.String?
+  public let wrapperId: Swift.String?
+  public let interval: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PreRollConfig : Swift.Codable {
+  public let enabled: Swift.Bool?
+  public let frequency: Swift.String?
+  public let numberOfSlots: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MidRollConfig : Swift.Codable {
+  public let enabled: Swift.Bool?
+  public let recurrence: Swift.Int?
+  public let numberOfSlots: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -86,84 +173,88 @@ public let SDK_VERSION: Swift.String
 public struct STNPlayerConfig : Swift.Decodable {
   public let publisherId: Swift.String
   public let descriptionUrl: Swift.String?
-  public let playerData: STNPlayerSDK.STNPlayerConfig.PlayerData
+  public let playerData: STNPlayerSDK.STNPlayerConfig.PlayerData?
   public struct PlayerData : Swift.Decodable {
-    public let playerId: Swift.String
-    public let playlistItem: STNPlayerSDK.STNPlayerConfig.PlaylistItem
-    public let playerTypeConfig: STNPlayerSDK.STNPlayerConfig.PlayerTypeConfig
+    public let content: STNPlayerSDK.STNPlayerConfig.ContentConfig?
     public let uiConfig: STNPlayerSDK.STNPlayerConfig.UIConfig?
-    public let minimizedConfig: STNPlayerSDK.STNPlayerConfig.MinimizedConfig?
-    public let playbackConfig: STNPlayerSDK.STNPlayerConfig.PlaybackConfig
-    public let skipContentAfter: Swift.Int?
     public let monetizationConfig: STNPlayerSDK.STNPlayerConfig.MonetizationConfig?
     public init(from decoder: any Swift.Decoder) throws
   }
-  public struct PlaylistItem : Swift.Decodable {
-    public let playlistId: Swift.String
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct PlayerTypeConfig : Swift.Decodable {
-    public let sticky: Swift.String?
+  public struct ContentConfig : Swift.Decodable {
+    public let playlistId: Swift.String?
+    public let autoplay: Swift.Bool?
+    public let soundsOn: Swift.Bool?
+    public let skipContentAfter: Swift.Int?
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct UIConfig : Swift.Decodable {
-    public let showMinimizeTransition: Swift.Bool
-    public let fullscreenConfig: STNPlayerSDK.STNPlayerConfig.FullscreenConfig
-    public let titleBar: STNPlayerSDK.STNPlayerConfig.TitleBar
-    public let controlBar: STNPlayerSDK.STNPlayerConfig.ControlBar
+    public let sticky: Swift.String?
+    public let showMinimizeTransition: Swift.Bool?
+    public let closeMinimizedConfig: STNPlayerSDK.STNPlayerConfig.CloseMinimizedConfig?
+    public let fullscreenConfig: STNPlayerSDK.STNPlayerConfig.FullscreenConfig?
+    public let titleBar: STNPlayerSDK.STNPlayerConfig.TitleBar?
+    public let controlBar: STNPlayerSDK.STNPlayerConfig.ControlBar?
     public let minimizedBackgroundColor: Swift.String?
     public let minimizedFontColor: Swift.String?
+    public let primaryColor: Swift.String?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct CloseMinimizedConfig : Swift.Decodable {
+    public let allowClose: Swift.Bool?
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct FullscreenConfig : Swift.Decodable {
-    public let onRotate: Swift.Bool
-    public let buttonEnabled: Swift.Bool
+    public let onRotate: Swift.Bool?
+    public let buttonEnabled: Swift.Bool?
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct TitleBar : Swift.Decodable {
-    public let backgroundColor: Swift.String
-    public let backgroundOpacity: Swift.Double
+    public let backgroundColor: Swift.String?
+    public let backgroundOpacity: Swift.Double?
     public let fontColor: Swift.String?
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct ControlBar : Swift.Decodable {
-    public let backgroundColor: Swift.String
-    public let backgroundOpacity: Swift.Double
+    public let backgroundColor: Swift.String?
+    public let backgroundOpacity: Swift.Double?
     public let fontColor: Swift.String?
     public init(from decoder: any Swift.Decoder) throws
   }
-  public struct MinimizedConfig : Swift.Decodable {
-    public let allowClose: Swift.Bool
-    public let allowRestore: Swift.Bool
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct PlaybackConfig : Swift.Decodable {
-    public let autoplay: Swift.Bool
-    public let soundsOn: Swift.Bool
-    public init(from decoder: any Swift.Decoder) throws
-  }
   public struct MonetizationConfig : Swift.Decodable {
-    public let adTagUrl: Swift.String
-    public let gam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Gam
-    public let floorPrice: Swift.String?
-    public let custParams: Swift.String?
+    public let floorPrice: Swift.Double?
+    public let revshare: Swift.Double?
+    public let gam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.GamConfig?
     public let preRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.PreRoll?
     public let midRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.MidRoll?
+    public struct GamConfig : Swift.Decodable {
+      public let externalGam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.ExternalGam?
+      public let internalGam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.InternalGam?
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct ExternalGam : Swift.Decodable {
+      public let enabled: Swift.Bool?
+      public let externalGamUrl: Swift.String?
+      public let demandOwner: Swift.String?
+      public let customParams: [Swift.String : Swift.String]?
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct InternalGam : Swift.Decodable {
+      public let enabled: Swift.Bool?
+      public let adTagUrl: Swift.String?
+      public let demandOwner: Swift.String?
+      public init(from decoder: any Swift.Decoder) throws
+    }
     public struct PreRoll : Swift.Decodable {
-      public let enabled: Swift.Bool
-      public let frequency: Swift.String
+      public let enabled: Swift.Bool?
+      public let frequency: Swift.String?
       public let numberOfSlots: Swift.Int?
       public init(from decoder: any Swift.Decoder) throws
     }
     public struct MidRoll : Swift.Decodable {
-      public let enabled: Swift.Bool
+      public let enabled: Swift.Bool?
       public let recurrence: Swift.Int?
-      public let breakpoints: [Swift.Int]
+      public let breakpoints: [Swift.Int]?
       public let numberOfSlots: Swift.Int?
-      public init(from decoder: any Swift.Decoder) throws
-    }
-    public struct Gam : Swift.Decodable {
-      public let customParams: [Swift.String : Swift.String]?
       public init(from decoder: any Swift.Decoder) throws
     }
     public init(from decoder: any Swift.Decoder) throws
