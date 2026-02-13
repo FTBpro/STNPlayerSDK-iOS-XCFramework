@@ -1,5 +1,16 @@
 # Release Notes
 
+## v1.0.7 - February 13, 2026
+
+- Add ConfigMapper for flexible configuration handling
+- Fix playing content when tags are missing
+- Update publisher response structure with additional cust_param fields
+- Add new fields for adImpression event and update CPM/netCPM calculation
+- Implement config structure update with allowClose parameter handling
+- Report SDK and app version in player events
+- Remove player ID from config (now uses server response)
+- Add "ios" platform identifier to version property
+
 ## v1.0.6 - January 22, 2026
 
 - Fix slots for pre-roll and mid-roll video ads.
