@@ -20,7 +20,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/Cherrypick-Consulting/prebid-mobile-ios.git",
-            from: "3.2.0"
+            branch: "mm-3.2.0"
         )
     ],
     targets: [
