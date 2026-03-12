@@ -1,1 +1,1 @@
-@_exported import STNPlayerSDKBinary
+@_exported import STNPlayerSDK

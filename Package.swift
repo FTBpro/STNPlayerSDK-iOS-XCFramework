@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "STNPlayerSDK",
-            targets: ["STNPlayerSDK"]
+            targets: ["STNPlayerSDKWrapper"]
         )
     ],
     dependencies: [
@@ -25,13 +25,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "STNPlayerSDKBinary",
+            name: "STNPlayerSDK",
             path: "STNPlayerSDK.xcframework"
         ),
         .target(
-            name: "STNPlayerSDK",
+            name: "STNPlayerSDKWrapper",
             dependencies: [
-                "STNPlayerSDKBinary",
+                "STNPlayerSDK",
                 .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios"),
                 .product(name: "PrebidMobile", package: "prebid-mobile-ios")
             ],
