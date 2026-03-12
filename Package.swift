@@ -19,7 +19,7 @@ let package = Package(
             from: "3.28.10"
         ),
         .package(
-            url: "https://github.com/prebid/prebid-mobile-ios.git",
+            url: "https://github.com/Cherrypick-Consulting/prebid-mobile-ios.git",
             from: "3.2.0"
         )
     ],
