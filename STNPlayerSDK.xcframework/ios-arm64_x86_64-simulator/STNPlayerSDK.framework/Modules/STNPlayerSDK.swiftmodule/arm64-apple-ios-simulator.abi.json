@@ -5546,6 +5546,575 @@
       },
       {
         "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "STNPlayerSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STNPlayerSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidInfo",
+        "printedName": "BidInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12STNPlayerSDK7BidInfoV2idSSvp",
+            "mangledName": "$s12STNPlayerSDK7BidInfoV2idSSvp",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12STNPlayerSDK7BidInfoV2idSSvg",
+                "mangledName": "$s12STNPlayerSDK7BidInfoV2idSSvg",
+                "moduleName": "STNPlayerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vastUrl",
+            "printedName": "vastUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12STNPlayerSDK7BidInfoV7vastUrlSSvp",
+            "mangledName": "$s12STNPlayerSDK7BidInfoV7vastUrlSSvp",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12STNPlayerSDK7BidInfoV7vastUrlSSvg",
+                "mangledName": "$s12STNPlayerSDK7BidInfoV7vastUrlSSvg",
+                "moduleName": "STNPlayerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12STNPlayerSDK7BidInfoV5priceSdvp",
+            "mangledName": "$s12STNPlayerSDK7BidInfoV5priceSdvp",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12STNPlayerSDK7BidInfoV5priceSdvg",
+                "mangledName": "$s12STNPlayerSDK7BidInfoV5priceSdvg",
+                "moduleName": "STNPlayerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "account",
+            "printedName": "account",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12STNPlayerSDK7BidInfoV7accountSSSgvp",
+            "mangledName": "$s12STNPlayerSDK7BidInfoV7accountSSSgvp",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12STNPlayerSDK7BidInfoV7accountSSSgvg",
+                "mangledName": "$s12STNPlayerSDK7BidInfoV7accountSSSgvg",
+                "moduleName": "STNPlayerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "demandOwner",
+            "printedName": "demandOwner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12STNPlayerSDK7BidInfoV11demandOwnerSSSgvp",
+            "mangledName": "$s12STNPlayerSDK7BidInfoV11demandOwnerSSSgvp",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12STNPlayerSDK7BidInfoV11demandOwnerSSSgvg",
+                "mangledName": "$s12STNPlayerSDK7BidInfoV11demandOwnerSSSgvg",
+                "moduleName": "STNPlayerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidInfo",
+                "printedName": "STNPlayerSDK.BidInfo",
+                "usr": "s:12STNPlayerSDK7BidInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidInfo",
+                "printedName": "STNPlayerSDK.BidInfo",
+                "usr": "s:12STNPlayerSDK7BidInfoV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12STNPlayerSDK7BidInfoV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12STNPlayerSDK7BidInfoV2eeoiySbAC_ACtFZ",
+            "moduleName": "STNPlayerSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "calculateBidPricePercanatge",
+            "printedName": "calculateBidPricePercanatge()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12STNPlayerSDK7BidInfoV09calculateC15PricePercanatgeSdyF",
+            "mangledName": "$s12STNPlayerSDK7BidInfoV09calculateC15PricePercanatgeSdyF",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12STNPlayerSDK7BidInfoV",
+        "mangledName": "$s12STNPlayerSDK7BidInfoV",
+        "moduleName": "STNPlayerSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrebidBidStack",
+        "printedName": "PrebidBidStack",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "push",
+            "printedName": "push(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BidInfo",
+                "printedName": "STNPlayerSDK.BidInfo",
+                "usr": "s:12STNPlayerSDK7BidInfoV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12STNPlayerSDK14PrebidBidStackC4pushyyAA0D4InfoVF",
+            "mangledName": "$s12STNPlayerSDK14PrebidBidStackC4pushyyAA0D4InfoVF",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pushBatch",
+            "printedName": "pushBatch(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[STNPlayerSDK.BidInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidInfo",
+                    "printedName": "STNPlayerSDK.BidInfo",
+                    "usr": "s:12STNPlayerSDK7BidInfoV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12STNPlayerSDK14PrebidBidStackC9pushBatchyySayAA0D4InfoVGF",
+            "mangledName": "$s12STNPlayerSDK14PrebidBidStackC9pushBatchyySayAA0D4InfoVGF",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popHighest",
+            "printedName": "popHighest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "STNPlayerSDK.BidInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidInfo",
+                    "printedName": "STNPlayerSDK.BidInfo",
+                    "usr": "s:12STNPlayerSDK7BidInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12STNPlayerSDK14PrebidBidStackC10popHighestAA0D4InfoVSgyF",
+            "mangledName": "$s12STNPlayerSDK14PrebidBidStackC10popHighestAA0D4InfoVSgyF",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peekHighest",
+            "printedName": "peekHighest(defaultFloor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "STNPlayerSDK.BidInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidInfo",
+                    "printedName": "STNPlayerSDK.BidInfo",
+                    "usr": "s:12STNPlayerSDK7BidInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12STNPlayerSDK14PrebidBidStackC11peekHighest12defaultFloorAA0D4InfoVSgSd_tF",
+            "mangledName": "$s12STNPlayerSDK14PrebidBidStackC11peekHighest12defaultFloorAA0D4InfoVSgSd_tF",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "highestPriceWithPercentage",
+            "printedName": "highestPriceWithPercentage(defaultFloor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12STNPlayerSDK14PrebidBidStackC26highestPriceWithPercentage12defaultFloorS2d_tF",
+            "mangledName": "$s12STNPlayerSDK14PrebidBidStackC26highestPriceWithPercentage12defaultFloorS2d_tF",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clear",
+            "printedName": "clear()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12STNPlayerSDK14PrebidBidStackC5clearyyF",
+            "mangledName": "$s12STNPlayerSDK14PrebidBidStackC5clearyyF",
+            "moduleName": "STNPlayerSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12STNPlayerSDK14PrebidBidStackC",
+        "mangledName": "$s12STNPlayerSDK14PrebidBidStackC",
+        "moduleName": "STNPlayerSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -6168,6 +6737,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -8646,6 +9222,66 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "prebid",
+                "printedName": "prebid",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Prebid?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Prebid",
+                        "printedName": "STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Prebid",
+                        "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6prebidAE6PrebidVSgvp",
+                "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6prebidAE6PrebidVSgvp",
+                "moduleName": "STNPlayerSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Prebid?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Prebid",
+                            "printedName": "STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Prebid",
+                            "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6prebidAE6PrebidVSgvg",
+                    "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6prebidAE6PrebidVSgvg",
+                    "moduleName": "STNPlayerSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "TypeDecl",
                 "name": "GamConfig",
                 "printedName": "GamConfig",
@@ -9965,6 +10601,309 @@
                 ]
               },
               {
+                "kind": "TypeDecl",
+                "name": "Prebid",
+                "printedName": "Prebid",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "enabled",
+                    "printedName": "enabled",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV7enabledSbSgvp",
+                    "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV7enabledSbSgvp",
+                    "moduleName": "STNPlayerSDK",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Bool?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV7enabledSbSgvg",
+                        "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV7enabledSbSgvg",
+                        "moduleName": "STNPlayerSDK",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "accountId",
+                    "printedName": "accountId",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV9accountIdSSSgvp",
+                    "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV9accountIdSSSgvp",
+                    "moduleName": "STNPlayerSDK",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV9accountIdSSSgvg",
+                        "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV9accountIdSSSgvg",
+                        "moduleName": "STNPlayerSDK",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "wrapperId",
+                    "printedName": "wrapperId",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV9wrapperIdSSSgvp",
+                    "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV9wrapperIdSSSgvp",
+                    "moduleName": "STNPlayerSDK",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV9wrapperIdSSSgvg",
+                        "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV9wrapperIdSSSgvg",
+                        "moduleName": "STNPlayerSDK",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "interval",
+                    "printedName": "interval",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV8intervalSiSgvp",
+                    "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV8intervalSiSgvp",
+                    "moduleName": "STNPlayerSDK",
+                    "declAttributes": [
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Int?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV8intervalSiSgvg",
+                        "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV8intervalSiSgvg",
+                        "moduleName": "STNPlayerSDK",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(from:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Prebid",
+                        "printedName": "STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Prebid",
+                        "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Decoder",
+                        "printedName": "any Swift.Decoder",
+                        "usr": "s:s7DecoderP"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV4fromAGs7Decoder_p_tKcfc",
+                    "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV4fromAGs7Decoder_p_tKcfc",
+                    "moduleName": "STNPlayerSDK",
+                    "implicit": true,
+                    "throwing": true,
+                    "init_kind": "Designated"
+                  }
+                ],
+                "declKind": "Struct",
+                "usr": "s:12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV",
+                "mangledName": "$s12STNPlayerSDK0A6ConfigV012MonetizationC0V6PrebidV",
+                "moduleName": "STNPlayerSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Decodable",
+                    "printedName": "Decodable",
+                    "usr": "s:Se",
+                    "mangledName": "$sSe"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(from:)",
@@ -10280,6 +11219,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -12854,6 +13800,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -13186,140 +14139,147 @@
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
-      "length": 20,
-      "value": "\"1001-sreq-test-top\""
-    },
-    {
-      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1161,
-      "length": 28,
-      "value": "\"1001-sreq-test-prebid-vast\""
-    },
-    {
-      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1256,
+      "offset": 1388,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "StringLiteral",
-      "offset": 1277,
+      "offset": 1409,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1299,
+      "offset": 1431,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1319,
+      "offset": 1451,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1356,
+      "offset": 1483,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1387,
+      "offset": 1633,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 2346,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1896,
+      "offset": 2394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1931,
+      "offset": 2503,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
+      "kind": "Array",
+      "offset": 2569,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2717,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2014,
+      "offset": 2800,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2074,
+      "offset": 2860,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2293,
+      "offset": 3079,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2347,
+      "offset": 3133,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2411,
+      "offset": 3197,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "FloatLiteral",
-      "offset": 2469,
+      "offset": 3255,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2525,
+      "offset": 3311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2576,
+      "offset": 3362,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5248,
-      "length": 5,
-      "value": "false"
+      "kind": "FloatLiteral",
+      "offset": 8952,
+      "length": 3,
+      "value": "3.0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9804,
+      "offset": 17672,
       "length": 5,
       "value": "false"
     },
@@ -13336,6 +14296,34 @@
       "offset": 540,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/PrebidBidStack.swift",
+      "kind": "Array",
+      "offset": 613,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/PrebidBidStack.swift",
+      "kind": "StringLiteral",
+      "offset": 741,
+      "length": 30,
+      "value": "\"com.minutemedia.prebid.stack\""
+    },
+    {
+      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/PrebidBidStack.swift",
+      "kind": "FloatLiteral",
+      "offset": 2963,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/PrebidBidStack.swift",
+      "kind": "FloatLiteral",
+      "offset": 3644,
+      "length": 3,
+      "value": "0.0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/Constants.swift",
@@ -13545,7 +14533,7 @@
       "kind": "StringLiteral",
       "offset": 107,
       "length": 7,
-      "value": "\"1.0.7\""
+      "value": "\"2.0.0\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/Components\/LoadingIndicator.swift",
@@ -13753,126 +14741,126 @@
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "StringLiteral",
-      "offset": 4394,
+      "offset": 5705,
       "length": 18,
       "value": "\"InvalidHLSMaster\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4420,
+      "offset": 5731,
       "length": 3,
       "value": "-10"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "Dictionary",
-      "offset": 4593,
+      "offset": 5904,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "StringLiteral",
-      "offset": 4643,
+      "offset": 5954,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4676,
+      "offset": 5987,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4733,
+      "offset": 6044,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "StringLiteral",
-      "offset": 4881,
+      "offset": 6192,
       "length": 19,
       "value": "\"#EXT-X-STREAM-INF\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 4914,
+      "offset": 6225,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "StringLiteral",
-      "offset": 5100,
+      "offset": 6411,
       "length": 12,
       "value": "\"RESOLUTION\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "StringLiteral",
-      "offset": 5147,
+      "offset": 6458,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "StringLiteral",
-      "offset": 5339,
+      "offset": 6650,
       "length": 11,
       "value": "\"BANDWIDTH\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5386,
+      "offset": 6697,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5582,
+      "offset": 6893,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "StringLiteral",
-      "offset": 5811,
+      "offset": 7122,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5823,
+      "offset": 7134,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6589,
+      "offset": 7900,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6611,
+      "offset": 7922,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6786,
+      "offset": 8097,
       "length": 1,
       "value": "1"
     },
@@ -13935,14 +14923,14 @@
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerEventsManager.swift",
       "kind": "Array",
-      "offset": 4352,
+      "offset": 4048,
       "length": 204,
       "value": "[\"gdprConsentApproved\", \"uniqueAdOpporutunity\", \"adOpportunity\", \"adImpressionReportsApi\", \"adViewableImpression\", \"adclicked\", \"adCompleted\"]"
     },
     {
       "filePath": "\/Users\/odedre\/work\/minute-media\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/VideoPlayer\/VideoPlayerEventsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10151,
+      "offset": 9847,
       "length": 5,
       "value": "false"
     },

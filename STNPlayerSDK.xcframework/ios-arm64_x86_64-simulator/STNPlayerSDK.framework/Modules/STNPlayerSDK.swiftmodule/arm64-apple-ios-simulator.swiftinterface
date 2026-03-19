@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name STNPlayerSDK
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
 import AVKit
 import DeveloperToolsSupport
@@ -150,18 +150,44 @@ public enum StickyPosition {
     get
   }
 }
+public struct BidInfo : Swift.Equatable {
+  public let id: Swift.String
+  public let vastUrl: Swift.String
+  public let price: Swift.Double
+  public let account: Swift.String?
+  public let demandOwner: Swift.String?
+  public static func == (lhs: STNPlayerSDK.BidInfo, rhs: STNPlayerSDK.BidInfo) -> Swift.Bool
+  public func calculateBidPricePercanatge() -> Swift.Double
+}
+@_hasMissingDesignatedInitializers public class PrebidBidStack {
+  public func push(_ bid: STNPlayerSDK.BidInfo)
+  public func pushBatch(_ newBids: [STNPlayerSDK.BidInfo])
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func popHighest() -> STNPlayerSDK.BidInfo?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func peekHighest(defaultFloor: Swift.Double = 0.0) -> STNPlayerSDK.BidInfo?
+  #endif
+  public func highestPriceWithPercentage(defaultFloor: Swift.Double = 0.0) -> Swift.Double
+  public func clear()
+  @objc deinit
+}
 @_Concurrency.MainActor @preconcurrency public struct STNPlayerRepresentable : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(config: STNPlayerSDK.STNPlayerConfig, orgId: Swift.String, delegate: (any STNPlayerSDK.STNPlayerDelegate)? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12STNPlayerSDK0A13RepresentableV4bodyQrvp", 0) __
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class STNPlayer : UIKit.UIView, UIKit.UIScrollViewDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any STNPlayerSDK.STNPlayerDelegate)? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency public init(config: STNPlayerSDK.STNPlayerConfig, orgId: Swift.String)
   @objc deinit
   @_Concurrency.MainActor @preconcurrency public func pin(to container: UIKit.UIView)
@@ -226,6 +252,7 @@ public struct STNPlayerConfig : Swift.Decodable {
     public let gam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.GamConfig?
     public let preRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.PreRoll?
     public let midRoll: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.MidRoll?
+    public let prebid: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.Prebid?
     public struct GamConfig : Swift.Decodable {
       public let externalGam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.ExternalGam?
       public let internalGam: STNPlayerSDK.STNPlayerConfig.MonetizationConfig.InternalGam?
@@ -255,6 +282,13 @@ public struct STNPlayerConfig : Swift.Decodable {
       public let recurrence: Swift.Int?
       public let breakpoints: [Swift.Int]?
       public let numberOfSlots: Swift.Int?
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct Prebid : Swift.Decodable {
+      public let enabled: Swift.Bool?
+      public let accountId: Swift.String?
+      public let wrapperId: Swift.String?
+      public let interval: Swift.Int?
       public init(from decoder: any Swift.Decoder) throws
     }
     public init(from decoder: any Swift.Decoder) throws
@@ -294,7 +328,9 @@ public struct STNPlayerConfig : Swift.Decodable {
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [STNPlayerSDK.STNPlayerEvent]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [STNPlayerSDK.STNPlayerEvent] {
@@ -314,7 +350,9 @@ public struct STNPlayerConfig : Swift.Decodable {
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [STNPlayerSDK.STNPlayerError]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [STNPlayerSDK.STNPlayerError] {
@@ -325,15 +363,21 @@ public struct STNPlayerConfig : Swift.Decodable {
   }
 }
 @objc public protocol STNPlayerDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func didReceiveEvent(event: STNPlayerSDK.STNPlayerEvent, data: [Swift.String : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func didReceiveError(error: STNPlayerSDK.STNPlayerError, data: [Swift.String : Any]?)
+  #endif
   @objc func didReceiveShutdownEvent()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CustomVideoPlayerView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any STNPlayerSDK.STNPlayerDelegate)? {
     get
     set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency public var shouldBeSticky: Swift.Bool {
     get
     set
