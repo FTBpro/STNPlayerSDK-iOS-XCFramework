@@ -1,5 +1,25 @@
 # Release Notes
 
+## v2.0.0 - March 19th, 2026
+
+### New Features
+- **Prebid Header Bidding Integration** — Full Prebid bid management with automatic demand fetching, bid stacking, and waterfall ad logic. The SDK now fetches Prebid bids on a configurable timer and uses a smart waterfall to maximize ad fill rate and yield.
+- **Premium Content Blocking** — The SDK can now prevent playback of premium/restricted content based on server configuration.
+
+### Improvements
+- **Ad Playback Reliability** — Fixed an issue where ads could be triggered while the video was paused. Pre-roll ads now wait for Prebid bid availability before starting the ad chain.
+- **Floor Price Optimization** — The SDK now provides the highest available bid price as the floor price to Prebid, improving CPM yield.
+- **Monetization Event Reporting** — Updated event reporting with demand owner, bidder keys, and network/account values to support Prebid analytics.
+
+### Bug Fixes
+- Fixed ad tag checking logic for external vs. internal tags
+- Fixed issue where ads could fire multiple times on autoplay
+
+### Breaking Changes
+- SDK version bumped to 2.0.0 — publisher configuration structure has been updated to support the new Prebid monetization settings.
+
+---
+
 ## v1.0.7 - February 13, 2026
 
 - Add ConfigMapper for flexible configuration handling
