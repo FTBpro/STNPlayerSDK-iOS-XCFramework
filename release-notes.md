@@ -1,5 +1,11 @@
 # Release Notes
 
+## v2.0.1 - April 14th, 2026
+
+- Remove overriding properties of version and organizationId
+- Remove checking of duplication bids for prebid stack
+
+
 ## v2.0.0 - March 19th, 2026
 
 ### New Features
