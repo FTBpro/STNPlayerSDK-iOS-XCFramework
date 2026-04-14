@@ -14533,7 +14533,7 @@
       "kind": "StringLiteral",
       "offset": 107,
       "length": 7,
-      "value": "\"2.0.1\""
+      "value": "\"2.0.2\""
     },
     {
       "filePath": "\/Users\/alexkhotiun\/projects\/project\/mm-video-player-ios-sdk\/STNPlayerSDK\/Sources\/Components\/LoadingIndicator.swift",
