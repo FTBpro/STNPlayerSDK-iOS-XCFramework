@@ -1,12 +1,12 @@
 # Release Notes
 
-## v2.0.1 - April 14th, 2026
+## v2.0.2 - April 14th, 2026
 
 - Remove overriding properties of version and organizationId
 - Remove checking of duplication bids for prebid stack
 
 
-## v2.0.0 - March 19th, 2026
+## v2.0.1 - March 19th, 2026
 
 ### New Features
 - **Prebid Header Bidding Integration** — Full Prebid bid management with automatic demand fetching, bid stacking, and waterfall ad logic. The SDK now fetches Prebid bids on a configurable timer and uses a smart waterfall to maximize ad fill rate and yield.
