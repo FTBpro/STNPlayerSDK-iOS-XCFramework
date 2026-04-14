@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cdg7PawFru45ziaG0f8U7NFv+Nc=
+		LoXMO5BCD5LgONSUYlUmZrisJC4=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cdg7PawFru45ziaG0f8U7NFv+Nc=
+		LoXMO5BCD5LgONSUYlUmZrisJC4=
 		</data>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YNDBcSbE8DeonDGPtQKaFzRgpIrVMIonPUHSQcci1vE=
+			SvJ/s+pOkW7cszoDHzpUbjk0jbMJv/ZVWdPJLuSFHHU=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YNDBcSbE8DeonDGPtQKaFzRgpIrVMIonPUHSQcci1vE=
+			SvJ/s+pOkW7cszoDHzpUbjk0jbMJv/ZVWdPJLuSFHHU=
 			</data>
 		</dict>
 		<key>Modules/STNPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
